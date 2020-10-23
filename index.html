@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOQU</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Welcome to DOQU!</h1>
+    <h3>Random Games Trivia!</h3>
+    <div class="wrapper">
+        <div class="question" id="questionBox"></div>
+        <div class="options">
+            <ul id="optionlist">
+                <li id="option1" onclick="answerClick(this)"></li>
+                <li id="option2" onclick="answerClick(this)"></li>
+                <li id="option3" onclick="answerClick(this)"></li>
+                <li id="option4" onclick="answerClick(this)"></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="next">
+                <button type="button" onclick="nextClick()" id="button">Next</button>
+            </div>
+            <div class="score-card">Score : <span id="scoreCard">0</span></div>
+            </div>
+        </div>
+    <iframe src="silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+    <audio id="player" autoplay loop>
+        <source src="bgm/dota2bgm.mp3" type="audio/mp3">
+    </audio>
+    <footer>
+        <a class="footer" target="_blank" href="https://github.com/alfatt">&copy; alfatt</a>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        dataload();
+    </script>
+    <script>
+        window.onload = function() {
+            var context = new AudioContext();
+        }
+    </script>
+</body>
+</html>

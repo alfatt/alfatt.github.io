@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'Grandstander', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+  }
+h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+body {
+    background-image: url("img/d2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.wrapper {
+    height: 400px;
+    width: 650px;
+    margin: 50px auto;
+    border-radius: 8px;
+    padding: 30px;
+  }
+  
+  .wrapper .question {
+    padding: 15px;
+    /* background-color: darkgoldenrod; */
+    border-radius: 8px;
+    color: gold;
+    font-size: 20px;
+    float: left;
+    width: 100%;
+    box-shadow: 0px 3px 0px grey;
+    text-align: center;
+  }
+  .wrapper .options {
+    float: left;
+    width: 100%;
+  }
+  
+  .wrapper .options ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper .options ul li {
+    display: inline-block;
+    background-color: white;
+    width: 46%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 25px;
+    font-size: 15px;
+    color: black;
+    box-shadow: 0px 3px 0px grey;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+  }
+  .wrapper .options ul li:active {
+    box-shadow: 0px 3px 0px transparent;
+  }
+  .wrapper .options ul li.correct {
+    background-color: #0fd40f;
+    box-shadow: 0px 3px 0px darkblue;
+  }
+  
+  .wrapper .options ul li.wrong {
+    background-color: #e91e1e;
+    box-shadow: 0px 3px 0px #cb0b0b;
+  }
+  
+  .wrapper .score {
+    float: left;
+    width: 100%;
+    padding: 25px 0px;
+  }
+  
+  .wrapper .score .next {
+    width: 40%;
+    float: left;
+  }
+  .wrapper .score .next button {
+    padding: 15px 80px;
+    color: black;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #c97a06;
+    outline: none;
+  }
+  .wrapper .score .next button:active {
+    box-shadow: 0px 3px 0px transparent;
+  }
+  
+  .wrapper .score .score-card {
+    width: 60%;
+    float: left;
+  }
+  .wrapper .score .score-card {
+    font-size: 20px;
+    color: black;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+  .wrapper .score .score-card span {
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: black;
+  }
+  footer {
+      text-align: center;
+      
+  }
+  footer .footer{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
